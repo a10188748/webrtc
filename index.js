@@ -4,8 +4,7 @@ const app = express();
 
 app.set('view engine', 'ejs');
 app.set('views', './views');
-
 app.use(express.static('public'));
 app.get('/', (req, res) => res.render('home'));
 
-app.listen(8080, () => console.log('Server Start !'));
+app.listen(3000, () => console.log('Server Start !'));
